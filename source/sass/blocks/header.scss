@@ -90,5 +90,16 @@
     position: static;
     padding-top: 22px;
     transform: none;
+    margin-right: 200px;
+  }
+
+  .header--index {
+    background-image: linear-gradient(to bottom, #ffffff 0, #ffffff 88px, rgba(0, 0, 0, 0.1) 88px, rgba(0, 0, 0, 0.1) 89px, #f9f9f9 89px, #f9f9f9 100%);
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .header__logo {
+    margin-right: 0;
   }
 }
