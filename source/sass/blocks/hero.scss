@@ -26,6 +26,7 @@
   font-weight: 700;
   line-height: 24px;
   padding: 24px calc(100% - 160px) 31px 30px;
+  transition: transform 0.5s;
 
   &:hover {
     transform: translateY(-5px);
@@ -104,5 +105,63 @@
   .hero__container {
     padding-left: 0;
     padding-right: 0;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .hero {
+    background-image: url("../img/hero-tablet.jpg");
+    position: relative;
+
+    &::after {
+      @include pseudo;
+
+      background-image: url("../img/zigzag-tablet.svg");
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 24px;
+      background-repeat: repeat-x;
+    }
+  }
+
+  .hero__list {
+    display: flex;
+  }
+
+  .hero__item {
+    width: 50%;
+  }
+
+  .hero__title {
+    padding-top: 110px;
+    margin-bottom: 372px;
+  }
+
+  .hero__link {
+    padding: 25px calc(100% - 36px - 131px) 34px 36px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .hero {
+    &::after {
+      background-image: url("../img/zigzag-desktop.svg");
+      height: 34px;
+    }
+  }
+
+  .hero__title {
+    margin-left: auto;
+    margin-right: auto;
+    width: 700px;
+    padding-top: 114px;
+    margin-bottom: 355px;
+  }
+
+  .hero__link {
+    padding: 25px calc(100% - 37px - 138px) 34px 37px;
   }
 }
