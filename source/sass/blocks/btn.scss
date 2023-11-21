@@ -1,0 +1,31 @@
+.btn {
+  display: inline-block;
+  padding: 16px 40px;
+  border: 2px solid #444444;
+  text-decoration: none;
+  text-align: center;
+  background-color: #ffffff;
+  color: #444444;
+  font-family: inherit;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px;
+  text-transform: uppercase;
+
+  &:hover {
+    background-color: #444444;
+    color: #ffffff;
+  }
+
+  &:active {
+    background-color: #444444;
+    color: rgba(#ffffff, 0.3);
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .btn {
+    font-size: 17px;
+  }
+}
