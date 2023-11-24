@@ -79,6 +79,10 @@
     padding-left: 0;
     padding-right: 0;
   }
+
+  .header__navigation {
+    z-index: 1;
+  }
 }
 
 @media (min-width: $tablet-width) {
