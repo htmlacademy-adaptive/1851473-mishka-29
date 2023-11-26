@@ -6,6 +6,10 @@
   text-transform: uppercase;
 }
 
+.product {
+  padding-bottom: 36px;
+}
+
 .product__table {
   line-height: 20px;
   border-collapse: collapse;
@@ -37,7 +41,6 @@
 .product__wrapper {
   text-align: center;
   padding-top: 25px;
-  padding-bottom: 36px;
 }
 
 .product__price {
@@ -55,11 +58,24 @@
   text-align: center;
 }
 
+.product__img {
+  vertical-align: bottom;
+}
+
 @media (min-width: $tablet-width) {
   .product__container {
     display: grid;
     grid-template-columns: 1fr 50%;
     column-gap: 42px;
+    grid-template-rows: auto auto auto 1fr;
+  }
+
+  .product__wrapper {
+    align-self: end;
+  }
+
+  .product {
+    padding-bottom: 52px;
   }
 
   .product__head {
