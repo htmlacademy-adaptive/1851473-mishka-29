@@ -1,0 +1,37 @@
+.slider__arrow {
+  position: relative;
+  width: 130px;
+  height: 52px;
+  margin-top: 0;
+  background-color: transparent;
+  border: 1px solid #ececec;
+  inset: auto;
+
+  &::after {
+    display: none;
+  }
+
+  &::before {
+    @include pseudo;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-repeat: no-repeat;
+    background-image: url("../img/slider-arrow-prev.svg");
+    background-position: center;
+  }
+}
+
+.slider__arrow--next {
+  border-left: none;
+
+  &::before {
+    rotate: 180deg;
+  }
+}
+
+.slider__nav {
+  display: flex;
+  margin-top: 30px;
+}

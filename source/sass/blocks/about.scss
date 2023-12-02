@@ -49,7 +49,7 @@
   }
 }
 
-.about {
+.about__container {
   padding-top: 37px;
   padding-bottom: 30px;
   position: relative;
@@ -104,7 +104,7 @@
     }
   }
 
-  .about {
+  .about__container {
     padding-top: 72px;
 
     &::before {
@@ -115,5 +115,24 @@
 
   .about__title {
     margin-bottom: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .about__container {
+    padding-left: 225px;
+    padding-right: 225px;
+
+    &::before {
+      height: 23px;
+      background-image: url("../img/zigzag-line-desktop.svg");
+      width: auto;
+      left: 50px;
+      right: 50px;
+    }
+  }
+
+  .about__item {
+    padding-right: 55px;
   }
 }
