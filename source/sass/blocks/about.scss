@@ -1,0 +1,138 @@
+.about__list {
+  @include list;
+}
+
+.about__title {
+  margin: 0;
+}
+
+.about__item {
+  color: #000000;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 20px;
+  padding-top: 83px;
+  position: relative;
+
+  &::before {
+    @include pseudo;
+    width: 55px;
+    height: 38px;
+    top: 28px;
+    left: -6px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &--flower::before {
+    background-image: url("../img/icon-flower.svg");
+  }
+
+  &--money::before {
+    background-image: url("../img/icon-money.svg");
+  }
+
+  &--like::before {
+    background-image: url("../img/icon-hearth.svg");
+  }
+
+  &--ball::before {
+    background-image: url("../img/icon-yarn.svg");
+  }
+
+  &--rocket::before {
+    background-image: url("../img/icon-rocket.svg");
+  }
+
+  &--gift::before {
+    background-image: url("../img/icon-gift.svg");
+  }
+}
+
+.about__container {
+  padding-top: 37px;
+  padding-bottom: 30px;
+  position: relative;
+
+  &::before {
+    @include pseudo;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 6px;
+    background-repeat: repeat-x;
+    background-image: url("../img/zigzag-line-mobile.svg");
+  }
+}
+
+
+@media (min-width: $tablet-width) {
+  .about__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .about__item {
+    width: 50%;
+    padding-right: 40px;
+    font-size: 20px;
+    line-height: 22px;
+    margin-bottom: 28px;
+
+    &--flower {
+      order: 1;
+    }
+
+    &--money {
+      order: 3;
+    }
+
+    &--like {
+      order: 5;
+    }
+
+    &--ball {
+      order: 2;
+    }
+
+    &--rocket {
+      order: 4;
+    }
+
+    &--gift {
+      order: 6;
+    }
+  }
+
+  .about__container {
+    padding-top: 72px;
+
+    &::before {
+      background-image: url("../img/zigzag-line-tablet.svg");
+      height: 17px;
+    }
+  }
+
+  .about__title {
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .about__container {
+    padding-left: 225px;
+    padding-right: 225px;
+
+    &::before {
+      height: 23px;
+      background-image: url("../img/zigzag-line-desktop.svg");
+      width: auto;
+      left: 50px;
+      right: 50px;
+    }
+  }
+
+  .about__item {
+    padding-right: 55px;
+  }
+}

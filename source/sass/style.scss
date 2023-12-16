@@ -1,1 +1,20 @@
 // Начните писать стили здесь
+@import "base/font.scss";
+@import "base/variables.scss";
+@import "base/mixins.scss";
+@import "base/global.scss";
+@import "base/container.scss";
+@import "blocks/about.scss";
+@import "blocks/btn.scss";
+@import "blocks/contacts.scss";
+@import "blocks/copyright.scss";
+@import "blocks/footer.scss";
+@import "blocks/header.scss";
+@import "blocks/hero.scss";
+@import "blocks/main.scss";
+@import "blocks/navigation.scss";
+@import "blocks/product.scss";
+@import "blocks/review.scss";
+@import "blocks/slider.scss";
+@import "blocks/social.scss";
+@import "blocks/title.scss";
